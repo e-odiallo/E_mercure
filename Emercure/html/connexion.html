@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>E-Mercure Connexion</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../css/util.css">
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+	<link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons">
+	<link rel="stylesgeet" href="https://rawgit.com/creativetimofficial/material-kit/master/assets/css/material-kit.css">
+	<link href="../css/connexion-style.css" rel="stylesheet">
+	<link href="../css/shop-homepage.css" rel="stylesheet">
+
+	<!-- Google  font -->
+	<link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<!-- Materialize CSS
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+-->
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+	<!-- Bootstrap core CSS -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Material Design Bootstrap -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.10.1/css/mdb.min.css" rel="stylesheet">
+
+	<!--===============================================================================================-->
+
+</head>
+<body>
+
+<style>
+	.bg {
+		background: black ;
+	}
+
+
+</style>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg fixed-top">
+	<div class="container">
+		<a class="navbar-brand" href="../index.php">E-mercure</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarResponsive">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link bg" href="../index.php">Home
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../html/connexion.html">Mon compte
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="container">
+				<div class="wrap-login100 p-l-85 p-r-85 p-t-55 p-b-55">
+					<form action="../php/root.php?action=login" method="POST"  class="login100-form validate-form flex-sb flex-w">
+						<span class="login100-form-title p-b-32">Connexion</span>
+						<span class="txt1 p-b-11">Adresse E-mail</span>
+						<div class="wrap-input100 validate-input m-b-36" data-validate = "Username is required">
+							<input class="input100" type="text" name="email" id="email" >
+							<span class="focus-input100"></span>
+						</div>
+						<span class="txt1 p-b-11">Mot de passe</span>
+						<div class="wrap-input100 validate-input m-b-12" data-validate = "Password is required">
+							<span class="btn-show-pass"><i class="fa fa-eye"></i></span>
+							<input class="input100" type="password" name="password" id="password" >
+							<span class="focus-input100"></span>
+						</div>
+						<div class="flex-sb-m w-full p-b-48">
+							<div>
+								<a href="#" class="txt3">Mot de passe oublié?</a>
+							</div>
+						</div>
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-sm"><input type="submit" id='submit' value='Connexion' class="spot_button" style="background: limegreen; width: em; color: white;"></div>
+								<div class="col-sm"><p onclick="location.href='register.html'" class="spot_button" style="background: limegreen; color: white;width: em; margin: auto;">Créer un compte </p></div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- Footer -->
+<footer class="page-footer font-small bg pt-4">
+
+	<!-- Footer Elements -->
+	<div class="container">
+
+		<!-- Social buttons -->
+		<div class="social-but">
+			<ul class="list-unstyled list-inline text-center">
+				<li class="list-inline-item">
+					<a class="btn-floating btn-fb mx-1">
+						<i class="fab fa-facebook-f"> </i>
+					</a>
+				</li>
+				<li class="list-inline-item">
+					<a class="btn-floating btn-tw mx-1">
+						<i class="fab fa-twitter"> </i>
+					</a>
+				</li>
+				<li class="list-inline-item">
+					<a class="btn-floating btn-gplus mx-1">
+						<i class="fab fa-google-plus-g"> </i>
+					</a>
+				</li>
+				<li class="list-inline-item">
+					<a class="btn-floating btn-li mx-1">
+						<i class="fab fa-linkedin-in"> </i>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!-- Social buttons -->
+
+	</div>
+	<!-- Footer Elements -->
+
+	<!-- Copyright -->
+	<div class="footer-copyright text-center py-3">© 2020 Copyright:
+		<a href="https://mdbootstrap.com/education/bootstrap/">E-Mercure </a>
+	</div>
+	<!-- Copyright -->
+
+</footer>
+
+<!-- Footer -->
+
+
+<!-- Bootstrap core JavaScript -->
+<script src="../vendor/jquery/jquery.min.js"></script>
+<script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

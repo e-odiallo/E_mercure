@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #pulse{
+            width: 700px;
+            padding: 15px;
+            border-radius: 20px;
+            box-shadow: 0 5px 20px 0 rgba(0,0,0,.2), 0 13px 24px -11px rgba(0,0,0,.2);
+        }
+
+        .button{
+            color: white;
+            border-radius: 15px;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+<!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
+
+<div id="pulse" style="text-align: center">
+    <div id="player"></div>
+
+    <p >Souhaitez vos partager cette vidéo ?</p>
+
+    <div style="display: inline-flex;" >
+        <p class="button" style="margin-right: 30px; background: limegreen">oui</p>
+        <p class="button" style="background: red">non</p>
+    </div>
+
+</div>
+
+
+<button onclick="pulsing()">hello</button>
+
+<script>
+    // 2. This code loads the IFrame Player API code asynchronously.
+    var tag = document.createElement('script');
+
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    // 3. This function creates an <iframe> (and YouTube player)
+    //    after the API code downloads.
+    var player;
+    function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+            height: '360',
+            width: '640',
+            videoId: 'jXlsVwQThKY'
+        });
+    }
+
+
+    function pulsing() {
+        alert("dedf");
+        player.loadVideoById("ujwYjL1OdQc");
+    }
+
+</script>
+</body>
+</html>

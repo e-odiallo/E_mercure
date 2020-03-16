@@ -1,0 +1,388 @@
+
+
+@font-face {
+    font-family: vice;
+    src: url("../src/fonts/vice.otf");
+}
+
+body{
+    font-family: vice;
+}
+
+
+/****** Searchable container */
+
+.title{
+    margin-left:20px
+}
+
+.fa-user{
+    font-size:80px
+}
+
+.searchable-container{
+    margin-top:40px;
+}
+
+.glyphicon-lg{
+    font-size:4em
+}
+.info-block{
+    border-right:5px solid #E6E6E6;margin-bottom:25px
+}
+.info-block .square-box {
+    width:120px;
+    min-height:120px;
+    margin-right:22px;
+    text-align:center!important;
+    background-color:#676767;
+    padding:20px 0
+}
+.info-block:hover .info-block.block-info {
+    border-color:#20819e
+}
+
+.info-block.block-info .square-box {
+    background-color:#5bc0de;
+    color:#FFF
+}
+
+
+.img-circle {
+    width: 10em;
+    margin-top: 2em;
+    margin-left: 2em;
+}
+
+.p-info-user {
+    font-size: 20px;
+
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 70%;
+        max-width: 80%;
+    }
+}
+/*   */
+
+body{margin-top:20px;
+    background:#eee;
+    font-family: vice;
+}
+
+.btn-compose-email {
+    padding: 10px 0px;
+    margin-bottom: 20px;
+}
+
+.btn-danger {
+    background-color: #E9573F;
+    border-color: #E9573F;
+    color: white;
+}
+
+.panel-teal .panel-heading {
+    background-color: #37BC9B;
+    border: 1px solid #36b898;
+    color: white;
+}
+
+.panel .panel-heading {
+    padding: 5px;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    border-bottom: 1px solid #DDD;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 50px;
+}
+
+.panel .panel-heading .panel-title {
+    padding: 10px;
+    font-size: 17px;
+}
+
+.panel{
+    border-radius: 50px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+form .form-group {
+    position: relative;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+.inner-all {
+    padding: 10px;
+}
+
+
+/*font Awesome http://fontawesome.io*/
+@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
+/*Comment List styles*/
+.comment-list .row {
+    margin-bottom: 0px;
+}
+.comment-list .panel .panel-heading {
+    padding: 4px 15px;
+    position: absolute;
+    border:none;
+    /*Panel-heading border radius*/
+    border-top-right-radius:0px;
+    top: 1px;
+}
+.comment-list .panel .panel-heading.right {
+    border-right-width: 0px;
+    /*Panel-heading border radius*/
+    border-top-left-radius:0px;
+    right: 16px;
+}
+.comment-list .panel .panel-heading .panel-body {
+    padding-top: 6px;
+}
+.comment-list figcaption {
+    /*For wrapping text in thumbnail*/
+    word-wrap: break-word;
+}
+/* Portrait tablets and medium desktops */
+@media (min-width: 768px) {
+    .comment-list .arrow:after, .comment-list .arrow:before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-color: transparent;
+    }
+    .comment-list .panel.arrow.left:after, .comment-list .panel.arrow.left:before {
+        border-left: 0;
+    }
+    /*****Left Arrow*****/
+    /*Outline effect style*/
+    .comment-list .panel.arrow.left:before {
+        left: 0px;
+        top: 30px;
+        /*Use boarder color of panel*/
+        border-right-color: inherit;
+        border-width: 16px;
+    }
+    /*Background color effect*/
+    .comment-list .panel.arrow.left:after {
+        left: 1px;
+        top: 31px;
+        /*Change for different outline color*/
+        border-right-color: #FFFFFF;
+        border-width: 15px;
+    }
+    /*****Right Arrow*****/
+    /*Outline effect style*/
+    .comment-list .panel.arrow.right:before {
+        right: -16px;
+        top: 30px;
+        /*Use boarder color of panel*/
+        border-left-color: inherit;
+        border-width: 16px;
+    }
+    /*Background color effect*/
+    .comment-list .panel.arrow.right:after {
+        right: -14px;
+        top: 31px;
+        /*Change for different outline color*/
+        border-left-color: #FFFFFF;
+        border-width: 15px;
+    }
+}
+.comment-list .comment-post {
+    margin-top: 6px;
+}
+
+/**** resumee ****/
+
+/* uses font awesome for social icons */
+@import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
+
+.page-header{
+    text-align: center;
+}
+
+/* resume stuff */
+
+.bs-callout {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #eee;
+    border-image: none;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px 1px 1px 5px;
+    margin-bottom: 5px;
+    padding: 20px;
+}
+.bs-callout:last-child {
+    margin-bottom: 0px;
+}
+.bs-callout h4 {
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.bs-callout-danger {
+    border-left-color: #d9534f;
+}
+
+.bs-callout-danger h4{
+    color: #d9534f;
+}
+
+.resume .list-group-item:first-child, .resume .list-group-item:last-child{
+    border-radius:0;
+}
+
+/*makes an anchor inactive(not clickable)*/
+.inactive-link {
+    pointer-events: none;
+    cursor: default;
+}
+
+.resume-heading .social-btns{
+    margin-top:15px;
+}
+.resume-heading .social-btns i.fa{
+    margin-left:-5px;
+}
+
+
+
+@media (max-width: 992px) {
+    .resume-heading .social-btn-holder{
+        padding:5px;
+    }
+}
+
+
+/* skill meter in resume. copy pasted from http://bootsnipp.com/snippets/featured/progress-bar-meter */
+
+.progress-bar {
+    text-align: left;
+    white-space: nowrap;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+
+.progress-bar > .progress-type {
+    padding-left: 10px;
+}
+
+.progress-meter {
+    min-height: 15px;
+    border-bottom: 2px solid rgb(160, 160, 160);
+    margin-bottom: 15px;
+}
+
+.progress-meter > .meter {
+    position: relative;
+    float: left;
+    min-height: 15px;
+    border-width: 0px;
+    border-style: solid;
+    border-color: rgb(160, 160, 160);
+}
+
+.progress-meter > .meter-left {
+    border-left-width: 2px;
+}
+
+.progress-meter > .meter-right {
+    float: right;
+    border-right-width: 2px;
+}
+
+.progress-meter > .meter-right:last-child {
+    border-left-width: 2px;
+}
+
+.progress-meter > .meter > .meter-text {
+    position: absolute;
+    display: inline-block;
+    bottom: -20px;
+    width: 100%;
+    font-weight: 700;
+    font-size: 0.85em;
+    color: rgb(160, 160, 160);
+    text-align: left;
+}
+
+.progress-meter > .meter.meter-right > .meter-text {
+    text-align: right;
+}
+
+.bottom_content{
+    padding: 30px;
+}
+/**** resume ****/
+
+
+@import "lesshat";
+
+/*******************************************
+  = LESS
+*******************************************/
+
+
+
+/*******************************************
+  = TYPOGRAPHY
+*******************************************/
+
+html {
+    font-size: 62.5%;
+}
+
+/*******************************************
+  = LAYOUT
+*******************************************/
+
+* {
+    -webit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+/*******************************************
