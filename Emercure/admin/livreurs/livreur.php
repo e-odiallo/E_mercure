@@ -23,7 +23,7 @@ error_reporting(E_ALL);
 $host='postgresql-dop.alwaysdata.net';
 $dbname = 'dop_e_mercure';
 $username = 'dop';
-$password = 'quxvas-kabby3-Taqras';
+$password = '';
 
 $dsn = "pgsql:host=$host;port=5432;dbname=$dbname;user=$username;password=$password";
 $conn = new PDO($dsn);
